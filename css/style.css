@@ -2,3 +2,14 @@
 {
     background: url("../images/User-Registration-WordPress-blog-feature-image.png");
 }
+.text
+{
+    font-size: 25px;
+    color: blue;
+
+}
+.text:hover
+{
+    font-size: 50px;
+    color: magenta;
+}
