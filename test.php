@@ -33,19 +33,19 @@
 
                     <tr>
                         <td>EMAIL ID</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="id" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>PASSWORD</td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><input type="password" id="pass" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>CONFIRM PASSWORD</td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><input type="password" id="con" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-success">SUBMIT</button></td>
+                        <td><button onclick="test()" class="btn btn-success">SUBMIT</button></td>
                     </tr>
 
                 </table>
@@ -56,6 +56,27 @@
         </div>
     </div>
     <P class="text">THANK YOU FOR REGISTERING</P>
+    <script>
+        function test()
+        {
+            var mail=document.getElementById("id").value
+            var password=document.getElementById("pass").value
+            var confirm=document.getElementById("con").value
+
+            console.log(mail)
+            console.log(password)
+            console.log(confirm)
+
+
+
+        }
+
+
+
+
+
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     

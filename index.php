@@ -33,13 +33,13 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="images/pic2.jpeg" class="d-block w-100" alt="...">
+                        <img src="images/pic2.jpeg" class="d-block w-100" alt="..." height="400px">
                       </div>
                       <div class="carousel-item">
-                        <img src="images/pic3.jpeg" class="d-block w-100" alt="...">
+                        <img src="images/pic3.jpeg" class="d-block w-100" alt="..." height="400px">
                       </div>
                       <div class="carousel-item">
-                        <img src="images/pic4.jpg" class="d-block w-100" alt="...">
+                        <img src="images/pic4.jpg" class="d-block w-100" alt="..." height="400px">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -66,15 +66,15 @@
                 <table class="table table-borderless">
                     <tr>
                         <td>EMAIL ID</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="id" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>PASSWORD</td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><input type="password" id="pass" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-danger">LOGIN</button></td>
+                        <td><button onclick="index()" class="btn btn-danger">LOGIN</button></td>
                     </tr>
                 </table>
             </div>
@@ -82,6 +82,26 @@
 
         </div>
     </div>
+    <script>
+
+      function index()
+      {
+        var email=document.getElementById("id").value
+        var password=document.getElementById("pass").value
+
+        console.log(email)
+        console.log(password)
+
+
+      }
+
+
+
+
+
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     
